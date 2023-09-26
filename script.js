@@ -11,11 +11,21 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const name0 = document.querySelector('name--0');
+const name1 = document.querySelector('name--1');
 
 let scores, cuurrentScore, activePlayer, playing;
 
+function getPlayerNames(){
+    let askFirst = prompt("What is Player one's name");
+    name0.innerHTML = askFirst ; 
+}
+
 // Starting conditions
 const init = function () {
+
+  getPlayerNames() ;
+  
   scores = [0, 0];
   cuurrentScore = 0;
   activePlayer = 0;
