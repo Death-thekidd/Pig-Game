@@ -16,15 +16,8 @@ const name1 = document.querySelector('name--1');
 
 let scores, cuurrentScore, activePlayer, playing;
 
-function getPlayerNames(){
-    let askFirst = prompt("What is Player one's name");
-    name0.innerText = askFirst ; 
-}
-
 // Starting conditions
 const init = function () {
-
-  getPlayerNames() ;
   
   scores = [0, 0];
   cuurrentScore = 0;
@@ -102,3 +95,6 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+
+  let askFirst = prompt("What is Player one's name");
+    name0. = askFirst ; 
