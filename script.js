@@ -18,7 +18,7 @@ let scores, cuurrentScore, activePlayer, playing;
 
 function getPlayerNames(){
     let askFirst = prompt("What is Player one's name");
-    name0.innerHTML = askFirst ; 
+    name0.innerText = askFirst ; 
 }
 
 // Starting conditions
