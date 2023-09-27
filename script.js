@@ -95,6 +95,3 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
-
-  let askFirst = prompt("What is Player one's name");
-  name0.innerText = askFirst ; 
